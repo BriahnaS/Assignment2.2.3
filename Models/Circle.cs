@@ -8,9 +8,10 @@ namespace Assignment2._2._3.Models
     {
         public double CircleRadius { get; set; }
 
-        public override double? CalculateArea()
+        public override double CalculateArea()
         {
-            return base.CalculateArea();
+            double area = Math.PI * CircleRadius * CircleRadius;
+            return area;
         }
     }
 }
